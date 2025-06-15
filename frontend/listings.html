@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Listings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Available Properties</h2>
+    <div id="listings"></div>
+
+    <h3>Add New Property</h3>
+    <form id="listingForm">
+      <input type="text" id="title" placeholder="Title" required />
+      <input type="text" id="location" placeholder="Location" required />
+      <input type="number" id="price" placeholder="Price per night" required />
+      <textarea id="description" placeholder="Description" required></textarea>
+      <button type="submit">Add Listing</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

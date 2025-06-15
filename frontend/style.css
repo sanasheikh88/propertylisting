@@ -1,0 +1,112 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f6f7fb;
+  color: #333;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+h2, h3 {
+  margin-bottom: 1rem;
+  color: #222;
+  text-align: center;
+}
+
+/* Listings styling */
+#listings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.listing {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.listing:hover {
+  transform: translateY(-5px);
+}
+
+.listing h4 {
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+.listing p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.listing input[type="date"] {
+  margin: 0.25rem 0;
+  padding: 0.25rem;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Book Now button */
+.book-btn {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #ff385c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.book-btn:hover {
+  background: #e73350;
+}
+
+/* Form styles */
+form {
+  background: #fff;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 0.75rem;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+form button {
+  background-color: #28a745;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background-color: #218838;
+}
